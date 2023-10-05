@@ -30,11 +30,11 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: transparent;
   padding: 22px 15%;
   border-bottom: 1px solid transparent;
@@ -79,6 +79,7 @@ span {
   cursor: pointer;
   margin-left: 25px;
   display: none;
+  color: var(--main-color);
 }
 
 section {
@@ -458,7 +459,8 @@ form textarea {
 
 @media (max-width: 1480px) {
   header {
-    padding: 12px 2.5%;
+    /* padding: 12px 2.5%; */
+    padding: 12px 5%;
     transition: 0.1s;
   }
 
@@ -552,7 +554,7 @@ form textarea {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .row:last-child {
     display: none;
   }
@@ -563,6 +565,10 @@ form textarea {
 
   .top {
     display: none;
+  }
+
+  header {
+    margin-bottom: 1rem;
   }
 }
 
